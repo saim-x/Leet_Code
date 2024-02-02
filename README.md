@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-This repository contains my solutions to various LeetCode problems. Each solution is written in [language], and the file name corresponds to the problem's title on LeetCode.
+This repository contains my solutions to various LeetCode problems. Each solution is written in C/C++/Js, and the file name corresponds to the problem's title on LeetCode.
 
 ## Folder Structure
 
