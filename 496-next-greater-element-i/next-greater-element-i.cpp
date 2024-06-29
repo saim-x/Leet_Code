@@ -6,11 +6,6 @@ public:
             for (int j = 0; j < nums2.size() - 1; ++j) {
 
                 if (nums1[i] == nums2[j]) {
-                    // if (nums1[i] < nums2[j + 1]) {
-                    //     ans.push_back(nums2[j + 1]);
-                    // } else {
-                    //     ans.push_back(-1);
-                    // }
                     bool flag = false;
                     for (int k = j + 1; k < nums2.size(); k++) {
                         if (nums1[i] < nums2[k]) {
