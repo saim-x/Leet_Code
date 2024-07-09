@@ -17,7 +17,9 @@ public:
 
         while (current->next != nullptr) {
             if (current->next->val == val) {
+                ListNode* nodeToDelete = current->next;
                 current->next = current->next->next;
+                delete nodeToDelete;
             } else {
                 current = current->next;
             }
