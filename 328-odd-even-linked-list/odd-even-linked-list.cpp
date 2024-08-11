@@ -29,7 +29,6 @@ public:
         ListNode* end = curr;
         if (end == NULL) {
             end = head;
-            // Handle the case where head itself might be NULL (empty list)
             while (end != NULL && end->next != NULL) {
                 end = end->next;
             }
