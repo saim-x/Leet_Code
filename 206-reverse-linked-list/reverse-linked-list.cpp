@@ -1,3 +1,4 @@
+
 /**
  * struct ListNode {
  *     int val;
@@ -10,16 +11,17 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode *prev = nullptr;
-    ListNode *next = nullptr;
-
-    while (head != nullptr)
-    {
-        next = head->next;
-        head->next = prev;
-        prev = head;
-        head = next;
-    }
-    return prev; 
+        if (head == NULL)
+            return NULL;
+        ListNode* prev = NULL;
+        ListNode* curr = NULL;
+        while (head != NULL) {
+            curr = head->next;
+            head->next = prev;
+            prev = head;
+            head = curr;
+        }
+        head = prev;
+        return head;
     }
 };
