@@ -30,17 +30,6 @@ public:
                 }
             }
         }
-        auto i1 = mp.begin();
-        auto i2 = mp2.begin();
-        // while (i1 != mp.end() && i2 != mp2.end()) {
-        //     if (i1->first != i2->second || i1->second != i2->first) {
-        //         cout << "yeha";
-
-        //         return false;
-        //     }
-        //     ++i1;
-        //     ++i2;
-        // }
         return true;
     }
 };
